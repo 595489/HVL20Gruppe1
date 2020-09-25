@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Ladestasjon</title>
-    <meta charset=utf-8 />
+	<head>
+		<title>Ladestasjon</title>
+		<meta charset=utf-8 />
+	
+		<!-- Not in use yet -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
+		<script src="scripts/mainScript.js"></script>
+	</head>
+	
+	<body>
+		<div ID="Header" class="navBar">
+			<a href="index.html">Home</a>
+			<a href="chargerloc.html">Finn Ladepunkt</a>
+			<a href="chargerhelp.html">Om ladestasjoner</a>
+			<a href="createuser.html">Bli kunde</a>
+			<a href="login.html">Login</a>
+		</div>
+		<div>
+			<h1>Førde</h1>
+			<img src="img/fordeDocks.jpg" ID="LocImg" alt="Ladepunkt forde" />
+			<p>Ladepunkt i Førde ligger ved Førde båtklubb, og har tilgang på alle typer ladekontakter. 
+			<br/>Så uansett om du trenger Type1, Type2, CHAdeMo eller CCS, kan man finne det her.
+			<br/>Ladepunktet ligger veldig sentralt og er kun en spasertur unna kjøpesenter. Der kan du finne, blandt annet REMA 1000, Europris og do. 
+			<br/>Her er det 2 ladestasjoner, med mulighet for 2 brukere per stasjon av gangen.<br/>
+			<p/><p>Under finner du en tabell som viser forvented ladetid ved ladestasjonene våre. 
+			<br/>Denne tar utgangspungt i en times pris på 195kr uten medlemskap. 
+			<h2>Tabell:</h2>
+			<table>
+				<tr>
+					<th>Ladeeffekt</th>
+					<th>Forventet ladetid 20-80% 70kWh batteri</th>
+				</tr>
+				<tr>
+					<td>50kW</td>
+					<td>ca. 35 minutter</td>
+				</tr>
+				<tr>
+					<td>150kW</td>
+					<td>ca. 20 minutter</td>
+				</tr>
+				<tr>
+					<td>250kW</td>
+					<td>ca. 15 minutter</td>
+				</tr>
+	
+			</table>
+			<br/>
+			<a href="https://www.google.no/maps/place/F%C3%B8rde+B%C3%A5tklubb/@61.4583028,5.8432951,17z/data=!3m1!4b1!4m5!3m4!1s0x461633dd81006625:0xe90af260322e17a0!8m2!3d61.4583003!4d5.8454838">Vis i google maps</a>
 
-    <!-- Not in use yet -->
-    <link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
-    <script src="scripts/mainScript.js"></script>
-</head>
-
-<body>
-    <div ID="Header" class="navBar">
-        <a href="index.html">Home</a>
-        <a href="chargerloc.html">Finn Ladepunkt</a>
-        <a href="chargerhelp.html">Om ladestasjoner</a>
-        <a href="createuser.html">Bli kunde</a>
-        <a href="login.html">Login</a>
-    </div>
-    <div>
-        <h1>Førde</h1>
-        <img src="img/fordeDocks.jpg" ID="LocImg" alt="Ladepunkt forde" />
-        <p>Ladepunkt i Førde ligger ved Førde båtklubb, og har tilgang på alle typer lade kontakter.
-            <br/>Her er det 2 ladestasjoner, med mulighet for 2 brukere per stasjon av gangen</p>
-        <table>
-            <tr>
-                <th>Batteri</th>
-                <th>Forventet tid</th>
-                <th>Forventet pris</th>
-				<th>Forventet pris med medlemskap</th>
-            </tr>
-            <tr>
-                <td>30kW</td>
-                <td>30 minutter</td>
-                <td>115kr</td>
-				<td>37kr</td>
-            </tr>
-            <tr>
-                <td>60kW</td>
-                <td>1 time</td>
-                <td>195kr</td>
-				<td>75kr</td>
-            </tr>
-            <tr>
-                <td>90kW</td>
-                <td>2 timer</td>
-                <td>390kr</td>
-				<td>150kr</td>
-            </tr>
-
-        </table>
-        <br/>
-        <a href="https://www.google.no/maps/place/F%C3%B8rde+B%C3%A5tklubb/@61.4583028,5.8432951,17z/data=!3m1!4b1!4m5!3m4!1s0x461633dd81006625:0xe90af260322e17a0!8m2!3d61.4583003!4d5.8454838">Vis i google maps</a>
-        <br/>
-        <br/>
-    </div>
-    <div ID="Footer">
-        <a href="about.html">Kontakt Oss</a>
-        <p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
-    </div>
-</body>
+		</div>
+		<div ID="Footer">
+			<a href="about.html">Kontakt Oss</a>
+			<p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
+		</div>
+	</body>
 
 </html>
