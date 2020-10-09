@@ -9,7 +9,7 @@ body {
 #Header {
 	position: sticky;
 	position: -webkit-sticky;
-	width: 99%;
+	width: 100%;
 	text-align: center;
 	top: 0px;
 	height: 75px;
