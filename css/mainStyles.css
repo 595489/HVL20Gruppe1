@@ -7,10 +7,10 @@ body {
 }
 
 #Header {
-	position: relative;
+	position: sticky;
 	width: 99%;
 	text-align: center;
-	text-top: 12px;
+	top: 0px;
 	height: 75px;
 	background-color: #1ccff9;
 	margin: 0px;
