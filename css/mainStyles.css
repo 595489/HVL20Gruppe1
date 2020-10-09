@@ -60,7 +60,7 @@ a:hover {
 }
 
 #Footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	text-align: center;
 	margin: 0px;
