@@ -1,3 +1,70 @@
 body {
 	
 }
+
+#Banner {
+	height: 200px;
+}
+
+#Header {
+	position: relative;
+	text-align: center;
+	text-top: 12px;
+	height: 75px;
+	background-color: #1ccff9;
+	margin: auto;
+	font-family: arial;
+}
+div {
+	text-align: center;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 20px;
+	font-family: verdana;
+}
+
+a {
+	background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover {
+	background-color: orange;
+	border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#Footer {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	margin: 0px;
+	background-color: #1ccff9;
+	width: 99%;
+	clear: both;
+}
