@@ -1,5 +1,5 @@
 body {
-	
+	height: 700px;
 }
 
 #Banner {
@@ -8,11 +8,12 @@ body {
 
 #Header {
 	position: relative;
+	width: 99%;
 	text-align: center;
 	text-top: 12px;
 	height: 75px;
 	background-color: #1ccff9;
-	margin: auto;
+	margin: 0px;
 	font-family: arial;
 }
 div {
@@ -60,11 +61,11 @@ a:hover {
 }
 
 #Footer {
-	position: fixed;
+	position: relative;
 	bottom: 0px;
 	text-align: center;
 	margin: 0px;
 	background-color: #1ccff9;
-	width: 99%;
+	width: 100%;
 	clear: both;
 }
