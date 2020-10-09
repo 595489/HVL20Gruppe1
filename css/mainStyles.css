@@ -13,7 +13,7 @@ body {
 	text-align: center;
 	top: 0px;
 	height: 75px;
-	background-color: #1ccff9;
+	background-color: #1c87c9;
 	margin: 0px;
 	font-family: arial;
 }
@@ -48,7 +48,7 @@ p {
 }
 
 a {
-	background-color: #1c87c9;
+	background-color: #2ccccf;
     border: none;
     color: white;
     padding: 20px 34px;
@@ -78,7 +78,7 @@ a:hover {
 	bottom: 0px;
 	text-align: center;
 	margin: 0px;
-	background-color: #1ccff9;
+	background-color: #1c87c9;
 	width: 100%;
 	clear: both;
 }
