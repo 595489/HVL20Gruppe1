@@ -8,6 +8,7 @@ body {
 
 #Header {
 	position: sticky;
+	position: -webkit-sticky;
 	width: 99%;
 	text-align: center;
 	top: 0px;
