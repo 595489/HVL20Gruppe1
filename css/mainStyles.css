@@ -1,9 +1,6 @@
-body {
-	background-color: #c7dce8
-}
-
-.Banner {
-	width: 100%;
+:root {
+	--main-bg-color: #c7dce8;
+	--filler-size: 
 }
 
 #Header {
@@ -18,6 +15,35 @@ body {
 	font-family: arial;
 }
 
+#Footer {
+	position: relative;
+	height: 150px;
+	bottom: 0px;
+	text-align: center;
+	margin: 0px;
+	background-color: #1ccff9;
+	width: 100%;
+	clear: both;
+}
+
+#Filler {
+	height: 400px;
+	background-color: var(--main-bg-colors);
+	background-size: cover;
+}
+
+.Banner {
+	width: 100%;
+}
+
+body {
+	background-color: var(--main-bg-color);
+}
+
+#LocImg {
+	width: 1000px;
+}
+
 #map {
 	height: 400px;
 	width: 40%;
@@ -26,6 +52,7 @@ body {
 div {
 	text-align: center;
 	margin: auto;
+
 }
 
 table,td,th{
@@ -44,6 +71,11 @@ table {
 	margin-right: auto;
 }
 
+th{
+	background-color: #4CAF50;
+	color: white;
+}
+
 h1 {
 	font-size: 50px;
 }
@@ -52,9 +84,8 @@ h2 {
 	font-size: 20px;
 }
 
-th{
-	background-color: #4CAF50;
-	color: white;
+h3 {
+	font-size: 18px;
 }
 
 p {
@@ -62,7 +93,7 @@ p {
 	font-family: verdana;
 }
 
-a {
+.navButton {
 	background-color: #1c87c9;
     border: none;
     color: white;
@@ -75,7 +106,7 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+.navButton:hover {
 	background-color: orange;
 	border: none;
     color: white;
@@ -86,14 +117,4 @@ a:hover {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-#Footer {
-	position: relative;
-	bottom: 0px;
-	text-align: center;
-	margin: 0px;
-	background-color: #1ccff9;
-	width: 100%;
-	clear: both;
 }
