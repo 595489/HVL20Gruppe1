@@ -29,7 +29,8 @@
 }
 
 #Filler {
-	height: calc(100vh - 225px);
+	/*height: calc(100vh - 225px);*/
+	height: var(--filler-height);
 	background-color: var(--main-bg-colors);
 }
 
