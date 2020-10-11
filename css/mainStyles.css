@@ -1,9 +1,9 @@
 body {
-	height: 700px;
+	background-color: #c7dce8
 }
 
-#Banner {
-	height: 200px;
+.Banner {
+	width: 100%;
 }
 
 #Header {
