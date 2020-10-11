@@ -52,6 +52,12 @@ body {
 	width: 1000px;
 }
 
+#map {
+	height: 400px;
+	width: 40%;
+	margin: auto;
+}
+
 table,td,th{
 	border: 1px solid black;
 	position: relative;
