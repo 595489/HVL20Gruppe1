@@ -16,7 +16,7 @@
 			<a class="navButton" href="createuser.html">Bli kunde</a>
 			<a class="navButton" href="login.html">Login</a>
 		</div>
-        <div>
+        <div class="mainDiv">
 			<h1>Finn Ladepunkt </h1>
             <a href="chargernav.html">Vestland Fylke</a>
         </div>
@@ -24,8 +24,19 @@
 			
 		</div>
         <div ID="Footer">
-            <a href="about.html">Kontakt Oss</a>
+            <a class="navButton" href="about.html">Kontakt Oss</a>
             <p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
         </div>
+		<script>
+			function resizeFiller() {
+				var main = document.getElementsByClassName('mainDiv').offsetHeight;
+				var bodySize = document.getElementsByClassName('body').offsetHeight;
+				var finSize = 855 - main;
+				if (main < 855) {
+					document.getElementsByClassName('mainDiv').style.height = finSize + "px";
+				}
+			}
+			window.onload = resizeFiller;
+		</script>
     </body>
 </html>

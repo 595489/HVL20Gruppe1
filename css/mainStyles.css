@@ -1,6 +1,7 @@
 :root {
 	--main-bg-color: #c7dce8;
-	--filler-size: 
+	--filler-height: 20px;
+	--main-accent-color: #1ccff9;
 }
 
 #Header {
@@ -10,7 +11,7 @@
 	text-align: center;
 	top: 0px;
 	height: 75px;
-	background-color: #1ccff9;
+	background-color: var(--main-accent-color);
 	margin: 0px;
 	font-family: arial;
 }
@@ -20,20 +21,25 @@
 	height: 150px;
 	bottom: 0px;
 	text-align: center;
+	vertical-align: middle;
 	margin: 0px;
-	background-color: #1ccff9;
+	background-color: var(--main-accent-color);
 	width: 100%;
 	clear: both;
 }
 
 #Filler {
-	height: 400px;
+	height: var(--filler-height);
 	background-color: var(--main-bg-colors);
-	background-size: cover;
 }
 
 .Banner {
 	width: 100%;
+}
+
+.mainDiv {
+	text-align: center;
+	margin: auto;
 }
 
 body {
@@ -47,12 +53,7 @@ body {
 #map {
 	height: 400px;
 	width: 40%;
-}
-
-div {
-	text-align: center;
 	margin: auto;
-
 }
 
 table,td,th{
@@ -91,6 +92,32 @@ h3 {
 p {
 	font-size: 20px;
 	font-family: verdana;
+}
+
+a {
+	background-color: var(--main-accent-color);
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover {
+	background-color: #1c87c9;
+	border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .navButton {
