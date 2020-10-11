@@ -29,7 +29,7 @@
 }
 
 #Filler {
-	height: calc(100vh - mainDiv);
+	height: calc(100vh - 225px);
 	background-color: var(--main-bg-colors);
 }
 
