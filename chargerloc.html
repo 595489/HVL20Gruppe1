@@ -32,10 +32,10 @@
         </div>
 		<script>
 			function resizeFiller() {
-				var main = document.getElementsByClassName('mainDiv').offsetHeight;
-				var bodySize = document.getElementById('Filler').offsetHeight;
-				var finSize = 1080 - main;
-				if (bodySize < 855) {
+				var main = document.getElementsByClassName('mainDiv').style.height;
+				var bodySize = document.getElementsByClassName('body').offsetHeight;
+				var finSize = 855px - main;
+				if (main < 855) {
 					document.getElementById('Filler').style.height = finSize + "px";
 				}
 			}
