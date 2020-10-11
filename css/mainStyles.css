@@ -29,11 +29,13 @@
 }
 
 #Filler {
-	height: var(--filler-height);
+	height: calc(100vh - mainDiv);
 	background-color: var(--main-bg-colors);
 }
 
 .Banner {
+	position: static;
+	top: 0;
 	width: 100%;
 }
 

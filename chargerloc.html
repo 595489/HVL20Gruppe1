@@ -9,6 +9,9 @@
     </head>
 
     <body>
+		<div class="Banner">
+			<img src="img/banner.jpg" class="Banner">
+		</div>
         <div ID="Header" class="navBar">
 			<a class="navButton" href="index.html">Hjem</a>
 			<a class="navButton" href="chargerloc.html">Finn Ladepunkt</a>
@@ -29,11 +32,11 @@
         </div>
 		<script>
 			function resizeFiller() {
-				var main = document.getElementsByClassName('mainDiv').offsetHeight;
+				var main = document.getElementsByClassName('mainDiv').style.height;
 				var bodySize = document.getElementsByClassName('body').offsetHeight;
-				var finSize = 855 - main;
+				var finSize = 855px - main;
 				if (main < 855) {
-					document.getElementsByClassName('mainDiv').style.height = finSize + "px";
+					document.getElementById('Filler').style.height = finSize + "px";
 				}
 			}
 			window.onload = resizeFiller;
