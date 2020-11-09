@@ -6,6 +6,12 @@
 	
 		<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
 		<script src="scripts/mainScript.js"></script>
+		<style>
+			body {
+				background-image: url('img/NausdalBG.png');
+				background-repeat: no-repeat;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -31,21 +37,77 @@
 			</p>
 			<h2>Tabell:</h2>
 			
-
 			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Informasjon om ladetid</button>
+				<button class="dropbtn">Informasjon om ladetid</button>
 				<div id="myDropdown" class="dropdown-content">
-					<a href="#">50 kW</a>
-					<a href="#">150 kW</a>
-					<a href="#">250 kW</a>
+					<button onclick="50kwFunc()" ID="50">50 kW</button>
+					<button onclick="150kwFunc()" ID="150">150 kW</button>
+					<button onclick="250kwFunc()" ID="250">250 kW</button>
 				</div>
 			</div>
 			
+			<div ID="Tab50" display="none">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>50kW</td>
+						<td>ca. 35 minutter</td>
+					</tr>
+				</table>
+			</div>
+			<div ID="Tab150" display="none">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>150kW</td>
+						<td>ca. 20 minutter</td>
+					</tr>
+				</table>
+			</div>
+			<div ID="Tab250">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>250kW</td>
+						<td>ca. 15 minutter</td>
+					</tr>
+				</table>
+			</div>
 			
+		<script>
+			function 50kwFunc() {
+				document.getElementById("Tab50").style.display="block";
+				document.getElementById("Tab150").style.display="none";
+				document.getElementById("Tab250").style.display="none";
+			}
 			
-			<br><br><br>
+			function 150kwFunc() {
+				document.getElementById("Tab50").style.display="none";
+				document.getElementById("Tab150").style.display="block";
+				document.getElementById("Tab250").style.display="none";
+			}
 			
-			
+			function 250kwFunc() {
+				document.getElementById('Tab50').style.display="none";
+				document.getElementById('Tab150').style.display="none";
+				document.getElementById('Tab250').style.display="block";
+			}
+		</script>
 			
 			<!-- <table>
 				<tr>
@@ -66,7 +128,8 @@
 				</tr>
 	
 			</table> -->
-			<br/>
+			
+			<br/><br/><br/>
 			<a href="https://www.google.no/maps/place/Gr%C3%B8nn+Kontakt+Hurtiglader/@61.506926,5.7180224,16.75z/data=!4m13!1m7!3m6!1s0x4616353d1acd6c41:0x349228e2a3d5f6f2!2sNaustdal,+6817+Naustdal!3b1!8m2!3d61.552281!4d5.8448236!3m4!1s0x4617cb4afc3b30b5:0x2a4a23a62f5588f6!8m2!3d61.5080819!4d5.7182564">Vis i google maps</a>
 		</div>
 		<div ID="Filler">
@@ -76,5 +139,6 @@
 			<a class="navButton" href="about.html">Kontakt Oss</a>
 			<p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
 		</div>
+		<script src="scripts/mainScript.js"></script>
 	</body>
 </html>

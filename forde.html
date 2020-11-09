@@ -5,7 +5,13 @@
 		<meta charset=utf-8 />
 
 		<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
-		<script src="scripts/mainScript.js"></script>
+		<style>
+			body {
+				background-image: url('img/FordsBG.png');
+				background-repeat: no-repeat;
+			}
+		</style>
+		
 	</head>
 
 	<body>
@@ -28,46 +34,85 @@
 				<br/>Her er det 2 ladestasjoner, med mulighet for 2 brukere per stasjon av gangen.<br/>
 			</p>
 			<p>Under finner du en tabell som viser forvented ladetid ved ladestasjonene våre.
-				<br/>Denne tar utgangspungt i en times pris på 195kr uten medlemskap.
+				<br/>Her kan du velge størrelsen på ditt batteri for å se detaljer om forventet ladetid.
 			</p>
 			<h2>Tabell:</h2>
 
 			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Informasjon om ladetid</button>
+				<button class="dropbtn">Informasjon om ladetid</button>
 				<div id="myDropdown" class="dropdown-content">
-							<a href="img/50kwtabell.jpg">50 kW</a>
-							<a href="#">150 kW</a>
-							<a href="#">250 kW</a>
+					<button type="button" onclick="50kwFunc()" ID="FiveO">50 kW</button>
+					<button type="button" onclick="150kwFunc()" ID="150">150 kW</button>
+					<button type="button" onclick="250kwFunc()" ID="250">250 kW</button>
 				</div>
 			</div>
 			
-		<script>
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
+			<div ID="Tab50" style="display: none;">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>50kW</td>
+						<td>ca. 35 minutter</td>
+					</tr>
+				</table>
+			</div>
+			<div ID="Tab150" style="display: none;">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>150kW</td>
+						<td>ca. 20 minutter</td>
+					</tr>
+				</table>
+			</div>
+			<div ID="Tab250" style="display: none;">
+				<img src="img/50kwtabell.jpg">
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>250kW</td>
+						<td>ca. 15 minutter</td>
+					</tr>
+				</table>
+			</div>
 			
-		window.onclick = function(event) {
-			if (!event.target.matches('.dropbtn')) {
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
-					}
-				}
+		<script>
+			FiveO.onclick(50kwFunc());
+		
+			function 50kwFunc() {
+				document.getElementById("Tab50").style.display="block";
+				document.getElementById("Tab150").style.display="none";
+				document.getElementById("Tab250").style.display="none";
 			}
-		}
-</script>
-
-
-
-
-
-
-
-
-
+			
+			function 150kwFunc() {
+				document.getElementById("Tab50").style.display="none";
+				document.getElementById("Tab150").style.display="block";
+				document.getElementById("Tab250").style.display="none";
+			}
+			
+			function 250kwFunc() {
+				document.getElementById('Tab50').style.display="none";
+				document.getElementById('Tab150').style.display="none";
+				document.getElementById('Tab250').style.display="block";
+			}
+			
+			
+		</script>
 
 			<!-- <table>
 				<tr>
@@ -100,5 +145,6 @@
 			<a class="navButton" href="about.html">Kontakt Oss</a>
 			<p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
 		</div>
+		<script src="scripts/mainScript.js"></script>
 	</body>
 </html>
