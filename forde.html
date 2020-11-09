@@ -52,51 +52,24 @@
 			</div>
 			
 		<script>
-		function 50kwFunc() {
-			var x50 = document.getElementById('Tab50');
-			var x150 = document.getElementById('Tab150');
-			var x250 = document.getElementById('Tab250');
+			function 50kwFunc() {
+				var x50 = document.getElementById('Tab50').style.display = "block";
+				var x150 = document.getElementById('Tab150').style.display = "none";
+				var x250 = document.getElementById('Tab250').style.display = "none";
+			}
 			
-			x50.style.display = "block";
-			x150.style.display = "none";
-			x250.style.display = "none";
-		}
-		
-		function 150kwFunc() {
-			var x50 = document.getElementById('Tab50');
-			var x150 = document.getElementById('Tab150');
-			var x250 = document.getElementById('Tab250');
+			function 150kwFunc() {
+				var x50 = document.getElementById('Tab50').style.display = "none";
+				var x150 = document.getElementById('Tab150').style.display = "block";
+				var x250 = document.getElementById('Tab250').style.display = "none";
+			}
 			
-			x50.style.display = "none";
-			x150.style.display = "block";
-			x250.style.display = "none";
-		}
-		
-		function 250kwFunc() {
-			var x50 = document.getElementById('Tab50');
-			var x150 = document.getElementById('Tab150');
-			var x250 = document.getElementById('Tab250');
-			
-			x50.style.display = "none";
-			x150.style.display = "none";
-			x250.style.display = "block";
-		}
-			//	document.getElementById("myDropdown").classList.toggle("show");
-			//}
-			//	
-			//window.onclick = function(event) {
-			//	if (!event.target.matches('.dropbtn')) {
-			//		var dropdowns = document.getElementsByClassName("dropdown-content");
-			//		var i;
-			//		for (i = 0; i < dropdowns.length; i++) {
-			//			var openDropdown = dropdowns[i];
-			//			if (openDropdown.classList.contains('show')) {
-			//				openDropdown.classList.remove('show');
-			//			}
-			//		}
-			//	}
-			//}
-</script>
+			function 250kwFunc() {
+				document.getElementById('Tab50').style.display = "none";
+				document.getElementById('Tab150').style.display = "none";
+				document.getElementById('Tab250').style.display = "block";
+			}
+		</script>
 
 
 

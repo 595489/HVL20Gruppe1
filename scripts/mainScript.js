@@ -9,8 +9,22 @@ function resizeFiller() {
 window.onload = resizeFiller;
 
 
-function myFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
+function 50kwFunc() {
+	var x50 = document.getElementById('Tab50').style.display = "block";
+	var x150 = document.getElementById('Tab150').style.display = "none";
+	var x250 = document.getElementById('Tab250').style.display = "none";
+}
+			
+function 150kwFunc() {
+	var x50 = document.getElementById('Tab50').style.display = "none";
+	var x150 = document.getElementById('Tab150').style.display = "block";
+	var x250 = document.getElementById('Tab250').style.display = "none";
+}
+			
+function 250kwFunc() {
+	document.getElementById('Tab50').style.display = "none";
+	document.getElementById('Tab150').style.display = "none";
+	document.getElementById('Tab250').style.display = "block";
 }
 
 window.onclick = function(event) {

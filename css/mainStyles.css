@@ -94,6 +94,18 @@ body {
 	position: static;
 }
 
+#Tab50 {
+	display: none;
+}
+
+#Tab150 {
+	display: none;
+}
+
+#Tab250 {
+	display: none;
+}
+
 table,td,th{
 	border: 1px solid black;
 	position: relative;
