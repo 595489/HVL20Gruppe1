@@ -35,48 +35,65 @@
 			<div class="dropdown">
 				<button class="dropbtn">Informasjon om ladetid</button>
 				<div id="myDropdown" class="dropdown-content">
-					<a onclick="50kwFunc()" ID="50">50 kW</a>
-					<a onclick="150kwFunc()" ID="150">150 kW</a>
-					<a onclick="250kwFunc()" ID="250">250 kW</a>
+					<button onclick="50kwFunc()" ID="50">50 kW</button>
+					<button onclick="150kwFunc()" ID="150">150 kW</button>
+					<button onclick="250kwFunc()" ID="250">250 kW</button>
 				</div>
 			</div>
 			
 			<div ID="Tab50" display="block">
 				<img src="img/50kwtabell.jpg">
+				<tr>
+					<th>Ladeeffekt</th>
+					<th>Forventet ladetid 20-80% 70kWh batteri</th>
+				</tr>
+				<tr>
+					<td>50kW</td>
+					<td>ca. 35 minutter</td>
+				</tr>
 			</div>
 			<div ID="Tab150" display="none">
 				<img src="img/50kwtabell.jpg">
+				<tr>
+					<th>Ladeeffekt</th>
+					<th>Forventet ladetid 20-80% 70kWh batteri</th>
+				</tr>
+				<tr>
+					<td>150kW</td>
+					<td>ca. 20 minutter</td>
+				</tr>
 			</div>
 			<div ID="Tab250">
 				<img src="img/50kwtabell.jpg">
+				<tr>
+					<th>Ladeeffekt</th>
+					<th>Forventet ladetid 20-80% 70kWh batteri</th>
+				</tr>
+				<tr>
+					<td>250kW</td>
+					<td>ca. 15 minutter</td>
+				</tr>
 			</div>
 			
 		<script>
 			function 50kwFunc() {
-				var x50 = document.getElementById('Tab50').style.display = "block";
-				var x150 = document.getElementById('Tab150').style.display = "none";
-				var x250 = document.getElementById('Tab250').style.display = "none";
+				document.getElementById("Tab50").style.display="block";
+				document.getElementById("Tab150").style.display="none";
+				document.getElementById("Tab250").style.display="none";
 			}
 			
 			function 150kwFunc() {
-				var x50 = document.getElementById('Tab50').style.display = "none";
-				var x150 = document.getElementById('Tab150').style.display = "block";
-				var x250 = document.getElementById('Tab250').style.display = "none";
+				document.getElementById("Tab50").style.display="none";
+				document.getElementById("Tab150").style.display="block";
+				document.getElementById("Tab250").style.display="none";
 			}
 			
 			function 250kwFunc() {
-				document.getElementById('Tab50').style.display = "none";
-				document.getElementById('Tab150').style.display = "none";
-				document.getElementById('Tab250').style.display = "block";
+				document.getElementById('Tab50').style.display="none";
+				document.getElementById('Tab150').style.display="none";
+				document.getElementById('Tab250').style.display="block";
 			}
 		</script>
-
-
-
-
-
-
-
 
 
 
