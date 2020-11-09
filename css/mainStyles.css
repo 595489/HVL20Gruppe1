@@ -37,6 +37,22 @@
 	background-color: var(--main-bg-colors);
 }
 
+#IndexButton1 {
+	position: relative;
+	margin: auto;
+	left: -200px;
+	top: 54px;
+	width: 500px;
+}
+
+#IndexButton2 {
+	position: relative;
+	margin: auto;
+	top: -200px;
+	right: -200px;
+	width: 500px;
+}
+
 .Banner {
 	position: static;
 	top: 0;
@@ -48,6 +64,14 @@
 .mainDiv {
 	text-align: center;
 	margin: auto;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 body {
@@ -62,6 +86,12 @@ body {
 	height: 400px;
 	width: 40%;
 	margin: auto;
+}
+
+#bgimage {
+	width: 101%;
+	margin-left: -10px;
+	position: static;
 }
 
 table,td,th{

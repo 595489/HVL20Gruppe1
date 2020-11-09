@@ -33,31 +33,69 @@
 			<h2>Tabell:</h2>
 
 			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Informasjon om ladetid</button>
+				<button class="dropbtn">Informasjon om ladetid</button>
 				<div id="myDropdown" class="dropdown-content">
-							<a href="img/50kwtabell.jpg">50 kW</a>
-							<a href="#">150 kW</a>
-							<a href="#">250 kW</a>
+					<a onclick="50kwFunc()" ID="50">50 kW</a>
+					<a onclick="150kwFunc()" ID="150">150 kW</a>
+					<a onclick="250kwFunc()" ID="250">250 kW</a>
 				</div>
 			</div>
 			
-		<script>
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
+			<div ID="Tab50" display="block">
+				<img src="img/50kwtabell.jpg">
+			</div>
+			<div ID="Tab150" display="none">
+				<img src="img/50kwtabell.jpg">
+			</div>
+			<div ID="Tab250">
+				<img src="img/50kwtabell.jpg">
+			</div>
 			
-		window.onclick = function(event) {
-			if (!event.target.matches('.dropbtn')) {
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
-					}
-				}
-			}
+		<script>
+		function 50kwFunc() {
+			var x50 = document.getElementById('Tab50');
+			var x150 = document.getElementById('Tab150');
+			var x250 = document.getElementById('Tab250');
+			
+			x50.style.display = "block";
+			x150.style.display = "none";
+			x250.style.display = "none";
 		}
+		
+		function 150kwFunc() {
+			var x50 = document.getElementById('Tab50');
+			var x150 = document.getElementById('Tab150');
+			var x250 = document.getElementById('Tab250');
+			
+			x50.style.display = "none";
+			x150.style.display = "block";
+			x250.style.display = "none";
+		}
+		
+		function 250kwFunc() {
+			var x50 = document.getElementById('Tab50');
+			var x150 = document.getElementById('Tab150');
+			var x250 = document.getElementById('Tab250');
+			
+			x50.style.display = "none";
+			x150.style.display = "none";
+			x250.style.display = "block";
+		}
+			//	document.getElementById("myDropdown").classList.toggle("show");
+			//}
+			//	
+			//window.onclick = function(event) {
+			//	if (!event.target.matches('.dropbtn')) {
+			//		var dropdowns = document.getElementsByClassName("dropdown-content");
+			//		var i;
+			//		for (i = 0; i < dropdowns.length; i++) {
+			//			var openDropdown = dropdowns[i];
+			//			if (openDropdown.classList.contains('show')) {
+			//				openDropdown.classList.remove('show');
+			//			}
+			//		}
+			//	}
+			//}
 </script>
 
 
