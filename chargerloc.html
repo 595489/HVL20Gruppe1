@@ -4,30 +4,51 @@
         <title>Finn Ladepunkt</title>
         <meta charset=utf-8 />
 
-        <!-- Not in use yet -->
         <link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
         <script src="scripts/mainScript.js"></script>
+		<style>
+			body {
+				background-image: url('img/chargerPlugBG.png');
+			}
+			#Filler {
+				height: 350px;
+			}
+		</style>
     </head>
 
     <body>
-        <div ID="Header" class="navBar">
-			<a href="index.html">Home</a>
-			<a href="chargerloc.html">Finn Ladepunkt</a>
-			<a href="chargerhelp.html">Om ladestasjoner</a>
-			<a href="createuser.html">Bli kunde</a>
-			<a href="login.html">Login</a>
+		<div class="Banner">
+			<img src="img/banner.jpg" class="Banner">
 		</div>
-        <h1>Finn Ladepunkt </h1>
-        <div>
+        <div ID="Header" class="navBar">
+			<a class="navButton" href="index.html">Hjem</a>
+			<a class="navButton" href="chargerloc.html">Finn Ladepunkt</a>
+			<a class="navButton" href="chargerhelp.html">Om ladestasjoner</a>
+			<a class="navButton" href="createuser.html">Bli kunde</a>
+			<a class="navButton" href="login.html">Login</a>
+		</div>
+        <div class="mainDiv">
+			<h1>Finn Ladepunkt </h1>
             <a href="chargernav.html">Vestland Fylke</a>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
+		<div ID="Filler">
+			
+		</div>
         <div ID="Footer">
-            <a href="about.html">Kontakt Oss</a>
+            <a class="navButton" href="about.html">Kontakt Oss</a>
             <p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
         </div>
+		<script>
+			function resizeFiller() {
+				var main = document.getElementsByClassName('mainDiv').style.height;
+				var bodySize = document.getElementsByClassName('body').offsetHeight;
+				var finSize = 855px - main;
+				if (main < 855) {
+					document.getElementById('Filler').style.height = finSize + "px";
+				}
+			}
+			window.onload = resizeFiller;
+		</script>
+		<script src="scripts/mainScript.js"></script>
     </body>
 </html>

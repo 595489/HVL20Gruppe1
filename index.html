@@ -3,33 +3,53 @@
 	<head>
 		<title>ChaBo Home</title>
 		<meta charset=utf-8 />
-		
-		<!-- Not in use yet -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/mainStyles.css" /> -->
-		<!-- <script src="scripts/mainScript.js" /> -->
+
+		<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
+		<script src="scripts/mainScript.js"></script>
+		<style>
+			body {
+				background-image: url('img/boatBG2.png');
+				background-color: #c7dce8;
+				background-repeat: no-repeat;
+			}
+			
+		</style>
 	</head>
+	
 	<body>
-		<div ID="Banner">
-			<!-- Banner image to come -->
+		<div class="Banner">
+			<img src="img/banner.jpg" class="Banner">
 		</div>
 		<div ID="Header" class="navBar">
-			<a href="index.html">Home</a>
-			<a href="chargerloc.html">Finn Ladepunkt</a>
-			<a href="chargerhelp.html">Om ladestasjoner</a>
-			<a href="createuser.html">Bli kunde</a>
-			<a href="login.html">Login</a>
+			<a class="navButton" href="index.html">Hjem</a>
+			<a class="navButton" href="chargerloc.html">Finn Ladepunkt</a>
+			<a class="navButton" href="chargerhelp.html">Om ladestasjoner</a>
+			<a class="navButton" href="createuser.html">Bli kunde</a>
+			<a class="navButton" href="login.html">Login</a>
 		</div>
-		<div>
+		<div class="mainDiv">
 			<h1>Velkommen til ChaBo</h1>
 			<h3>Vi er den ledende aktøren innen lading av El-båter i Sogn of Fjordane</h3>
-			<img src=img/boatDocks.jpg width="400" height="250">
+			<!-- <img src=img/boatDocks.jpg width="400" height="250"> -->
+			<div ID="IndexButton1">
+				<img src=img/boatBG.jpg width="300" height="175">
+				<a class="navButton" href="chargerloc.html">Finn Ladepunkt</a>
+			</div>
+			<div ID="IndexButton2">
+				<img src=img/chargerPlug.jpg width="300" height="175">
+				<a class="navButton" href="chargerhelp.html">Om ladestasjoner</a>
+			</div>
 			<p>ChaBo leverer ladestasjoner til el-båter.<br/> 
 			I dag er vi størst innen lading i Sogn og Fjordane, med konstant utvidelse til resten av landet<br/>
 			På denne siden kan du finne ladepunkter, få hjelp til å bruke laderen, sjekke priser og mer</p>
 		</div>
+		<div ID="Filler">
+			
+		</div>
 		<div ID="Footer">
-			<a href="about.html">Kontakt Oss</a>
+			<a class="navButton" href="about.html">Kontakt Oss</a>
 			<p ID="FootParagraph">Tjenesten er levert av ChaBo</p>
 		</div>
+		<script src="scripts/mainScript.js"></script>
 	</body>
 </html>

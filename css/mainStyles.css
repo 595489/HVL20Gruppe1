@@ -1,3 +1,273 @@
-body {
-	
+:root {
+	--main-bg-color: #c7dce8;
+	--filler-height: 20px;
+	--main-accent-color: #1ccff9;
 }
+
+#Header {
+	position: sticky;
+	position: -webkit-sticky;
+	width: 101%;
+	text-align: center;
+	top: 0px;
+	height: 75px;
+	background-color: var(--main-accent-color);
+	margin-left: -10px;
+	margin-top: -5px;
+	padding: 0;
+	font-family: arial;
+}
+
+#Footer {
+	position: relative;
+	height: 150px;
+	bottom: 0px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: -10px;
+	margin-top: -5px;
+	background-color: var(--main-accent-color);
+	width: 101%;
+	clear: both;
+}
+
+#Filler {
+	/*height: calc(100vh - 225px);*/
+	height: var(--filler-height);
+	background-color: var(--main-bg-colors);
+}
+
+#IndexButton1 {
+	position: relative;
+	margin: auto;
+	left: -200px;
+	top: 54px;
+	width: 500px;
+}
+
+#IndexButton2 {
+	position: relative;
+	margin: auto;
+	top: -200px;
+	right: -200px;
+	width: 500px;
+}
+
+#LocImg {
+	width: 1000px;
+}
+
+#map {
+	height: 400px;
+	width: 40%;
+	margin: auto;
+}
+
+#bgimage {
+	width: 101%;
+	margin-left: -10px;
+	position: static;
+}
+
+/*#Tab50 {
+	display: none;
+}
+
+#Tab150 {
+	display: none;
+}
+
+#Tab250 {
+	display: none;
+} */
+
+.Banner {
+	position: static;
+	top: 0;
+	margin-left: -10px;
+	margin-top: -5px;
+	width: 101%;
+}
+
+.mainDiv {
+	text-align: center;
+	margin: auto;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+body {
+	background-color: var(--main-bg-color);
+}
+
+
+table,td,th{
+	border: 1px solid black;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+}
+			
+table {
+	border-collapse: collapse;
+	position: relative;
+	text-align: center;
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 20px;
+	font-family: verdana;
+}
+
+a {
+	background-color: var(--main-accent-color);
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover {
+	background-color: #1c87c9;
+	border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button {
+	background-color: var(--main-accent-color);
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+	background-color: #1c87c9;
+	border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.navButton {
+	background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.navButton:hover {
+	background-color: orange;
+	border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: var(--main-accent-color);
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #1c87c9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #1c87c9;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
