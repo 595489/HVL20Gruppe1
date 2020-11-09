@@ -53,31 +53,6 @@
 	width: 500px;
 }
 
-.Banner {
-	position: static;
-	top: 0;
-	margin-left: -10px;
-	margin-top: -5px;
-	width: 101%;
-}
-
-.mainDiv {
-	text-align: center;
-	margin: auto;
-}
-
-.dropdown {
-	display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-body {
-	background-color: var(--main-bg-color);
-}
-
 #LocImg {
 	width: 1000px;
 }
@@ -105,6 +80,32 @@ body {
 #Tab250 {
 	display: none;
 }
+
+.Banner {
+	position: static;
+	top: 0;
+	margin-left: -10px;
+	margin-top: -5px;
+	width: 101%;
+}
+
+.mainDiv {
+	text-align: center;
+	margin: auto;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+body {
+	background-color: var(--main-bg-color);
+}
+
 
 table,td,th{
 	border: 1px solid black;
