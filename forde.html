@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
 		<script src="scripts/mainScript.js"></script>
 	</head>
-	
+
 	<body>
 		<div class="Banner">
 			<img src="img/banner.jpg" class="Banner">
@@ -22,16 +22,36 @@
 		<div class="mainDiv">
 			<h1>Førde</h1>
 			<img src="img/fordeDocks.jpg" ID="LocImg" alt="Ladepunkt forde" />
-			<p>Ladepunkt i Førde ligger ved Førde båtklubb, og har tilgang på alle typer ladekontakter. 
+			<p>Ladepunkt i Førde ligger ved Førde båtklubb, og har tilgang på alle typer ladekontakter.
 				<br/>Så uansett om du trenger Type1, Type2, CHAdeMo eller CCS, kan man finne det her.
-				<br/>Ladepunktet ligger veldig sentralt og er kun en spasertur unna kjøpesenter. Der kan du finne, blandt annet REMA 1000, Europris og do. 
+				<br/>Ladepunktet ligger veldig sentralt og er kun en spasertur unna kjøpesenter. Der kan du finne, blandt annet REMA 1000, Europris og do.
 				<br/>Her er det 2 ladestasjoner, med mulighet for 2 brukere per stasjon av gangen.<br/>
 			</p>
-			<p>Under finner du en tabell som viser forvented ladetid ved ladestasjonene våre. 
+			<p>Under finner du en tabell som viser forvented ladetid ved ladestasjonene våre.
 				<br/>Denne tar utgangspungt i en times pris på 195kr uten medlemskap.
 			</p>
 			<h2>Tabell:</h2>
-			<table>
+
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Informasjon om ladetid</button>
+				<div id="myDropdown" class="dropdown-content">
+							<a href="#">50 kW</a>
+							<a href="#">150 kW</a>
+							<a href="#">250 kW</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- <table>
 				<tr>
 					<th>Ladeeffekt</th>
 					<th>Forventet ladetid 20-80% 70kWh batteri</th>
@@ -48,14 +68,15 @@
 					<td>250kW</td>
 					<td>ca. 15 minutter</td>
 				</tr>
-	
-			</table>
+
+			</table> -->
+			<br><br><br>
 			<br/>
 			<a href="https://www.google.no/maps/place/F%C3%B8rde+B%C3%A5tklubb/@61.4583167,5.84539,19.25z/data=!4m5!3m4!1s0x461633dd81006625:0xe90af260322e17a0!8m2!3d61.4583003!4d5.8454838">Vis i google maps</a>
 
 		</div>
 		<div ID="Filler">
-			
+
 		</div>
 		<div ID="Footer">
 			<a class="navButton" href="about.html">Kontakt Oss</a>
