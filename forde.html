@@ -49,43 +49,52 @@
 			
 			<div ID="Tab50" display="block">
 				<img src="img/50kwtabell.jpg">
-				<tr>
-					<th>Ladeeffekt</th>
-					<th>Forventet ladetid 20-80% 70kWh batteri</th>
-				</tr>
-				<tr>
-					<td>50kW</td>
-					<td>ca. 35 minutter</td>
-				</tr>
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>50kW</td>
+						<td>ca. 35 minutter</td>
+					</tr>
+				</table>
 			</div>
 			<div ID="Tab150" display="none">
 				<img src="img/50kwtabell.jpg">
-				<tr>
-					<th>Ladeeffekt</th>
-					<th>Forventet ladetid 20-80% 70kWh batteri</th>
-				</tr>
-				<tr>
-					<td>150kW</td>
-					<td>ca. 20 minutter</td>
-				</tr>
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>150kW</td>
+						<td>ca. 20 minutter</td>
+					</tr>
+				</table>
 			</div>
 			<div ID="Tab250">
 				<img src="img/50kwtabell.jpg">
-				<tr>
-					<th>Ladeeffekt</th>
-					<th>Forventet ladetid 20-80% 70kWh batteri</th>
-				</tr>
-				<tr>
-					<td>250kW</td>
-					<td>ca. 15 minutter</td>
-				</tr>
+				<br/>
+				<table>
+					<tr>
+						<th>Ladeeffekt</th>
+						<th>Forventet ladetid 20-80% 70kWh batteri</th>
+					</tr>
+					<tr>
+						<td>250kW</td>
+						<td>ca. 15 minutter</td>
+					</tr>
+				</table>
 			</div>
 			
 		<script>
 			function 50kwFunc() {
-				document.getElementById("Tab50").style.display="block";
-				document.getElementById("Tab150").style.display="none";
-				document.getElementById("Tab250").style.display="none";
+				document.getElementById("Tab50").style.display = document.getElementsByClassName("show");
+				document.getElementById("Tab150").style.display = "none";
+				document.getElementById("Tab250").style.display = "none";
 			}
 			
 			function 150kwFunc() {
