@@ -7,12 +7,14 @@
 #Header {
 	position: sticky;
 	position: -webkit-sticky;
-	width: 100%;
+	width: 101%;
 	text-align: center;
 	top: 0px;
 	height: 75px;
 	background-color: var(--main-accent-color);
-	margin: 0px;
+	margin-left: -10px;
+	margin-top: -5px;
+	padding: 0;
 	font-family: arial;
 }
 
@@ -22,21 +24,25 @@
 	bottom: 0px;
 	text-align: center;
 	vertical-align: middle;
-	margin: 0px;
+	margin-left: -10px;
+	margin-top: -5px;
 	background-color: var(--main-accent-color);
-	width: 100%;
+	width: 101%;
 	clear: both;
 }
 
 #Filler {
-	height: calc(100vh - 225px);
+	/*height: calc(100vh - 225px);*/
+	height: var(--filler-height);
 	background-color: var(--main-bg-colors);
 }
 
 .Banner {
 	position: static;
 	top: 0;
-	width: 100%;
+	margin-left: -10px;
+	margin-top: -5px;
+	width: 101%;
 }
 
 .mainDiv {
